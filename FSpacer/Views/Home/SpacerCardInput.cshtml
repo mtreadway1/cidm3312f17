@@ -1,0 +1,162 @@
+﻿@model FSpacer.Models.SpacerInfo
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using (Html.BeginForm("Update", "SpacerCards", FormMethod.Post))
+{
+    <h2>Spacer Info Input</h2><br />
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Form Name -->
+            
+          
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.OperatorID class="col-md-4 control-label" for="textinput">Operator ID</label>
+              
+               @Html.TextBoxFor(model => model.OperatorID)
+            </div>
+            <div class="form-group">
+                <label asp-for=@Model.date class="col-md-4 control-label" for="textinput">Date Last Serviced?</label>
+
+                @Html.TextBoxFor(model => model.date)
+            </div>
+
+            <div class="form-group">
+                <label asp-for=@Model.Active class="col-md-4 control-label" for="textinput">Active?</label>
+
+                @Html.CheckBoxFor(m => m.Active)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.Ratio class="col-md-4 control-label" for="textinput">Ratio</label>
+                 @Html.TextBoxFor(model => model.Ratio)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.DriveNumber class="col-md-4 control-label" for="textinput">Drive Number</label>
+                @Html.TextBoxFor(model => model.DriveNumber)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.GearNumber class="col-md-4 control-label" for="textinput">Gear Number</label>
+                @Html.TextBoxFor(model => model.GearNumber)
+            </div>
+            <div class="form-group">
+                <label asp-for=@Model.size class="col-md-4 control-label" for="textinput">Size</label>
+                @Html.TextBoxFor(model => model.size)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HorizontalGearCaseDeviation class="col-md-4 control-label" for="textinput">Horizontal Gear Case Deviation</label>
+                @Html.TextBoxFor(model => model.HorizontalGearCaseDeviation)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HorizontalCarrierDeviation class="col-md-4 control-label" for="textinput">Horizontal Carrier Deviation</label>
+                @Html.TextBoxFor(model => model.HorizontalCarrierDeviation)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.Bearing class="col-md-4 control-label" for="textinput">Bearing</label>
+                @Html.TextBoxFor(model => model.Bearing)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HorizontalMDGear class="col-md-4 control-label" for="textinput">Horizontal MD Gear</label>
+                @Html.TextBoxFor(model => model.HorizontalMDGear)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HorizontalSpacerLength class="col-md-4 control-label" for="textinput">Horizontal Spacer Length</label>
+                @Html.TextBoxFor(model => model.HorizontalSpacerLength)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.VerticalGearCaseDeviation class="col-md-4 control-label" for="textinput">Vertical Gear Case Deviation</label>
+                @Html.TextBoxFor(model => model.VerticalGearCaseDeviation)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.VerticalCarrierBearingDeviation class="col-md-4 control-label" for="textinput">Vertical Carrier Bearing Deviation</label>
+                @Html.TextBoxFor(model => model.VerticalCarrierBearingDeviation)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.GearMount class="col-md-4 control-label" for="textinput">Gear Mount</label>
+                @Html.TextBoxFor(model => model.GearMount)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.VerticalMDGear class="col-md-4 control-label" for="textinput">Vertical MD Gear</label>
+                @Html.TextBoxFor(model => model.VerticalMDGear)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.VerticalSpacerLength class="col-md-4 control-label" for="textinput">Vertical Spacer Length</label>
+                @Html.TextBoxFor(model => model.VerticalSpacerLength)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.Backlash class="col-md-4 control-label" for="textinput">Backlash</label>
+                @Html.TextBoxFor(model => model.Backlash)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HorizontalSetting class="col-md-4 control-label" for="textinput">Horizontal Setting</label>
+                @Html.TextBoxFor(model => model.HorizontalSetting)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.IntermediateSetting class="col-md-4 control-label" for="textinput">Intermediate Setting</label>
+                @Html.TextBoxFor(model => model.IntermediateSetting)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.OutputSetting class="col-md-4 control-label" for="textinput">Output Setting</label>
+                @Html.TextBoxFor(model => model.OutputSetting)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HelicalGearNumber class="col-md-4 control-label" for="textinput">Helical Gear Number</label>
+                @Html.TextBoxFor(model => model.HelicalGearNumber)
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label asp-for=@Model.HelicalPinionNumber class="col-md-4 control-label" for="textinput">Helical Pinion Number</label>
+                @Html.TextBoxFor(model => model.HelicalPinionNumber)
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="singlebutton">Submit Spacer Info</label>
+                    @*<button asp-controller="Home" asp-action="SpacerCardInput" >Submit</button>*@
+                    <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+}
